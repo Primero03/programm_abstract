@@ -68,6 +68,11 @@
  __cw__ - выбстрый ввод команды __*System*.Console.WriteLine( );__
  
  __ToLower__ - команда через которую,терминал воспринимает текс,вне зависимости от CapsLock
+ 
+ __String.Concat(arg1,arg2)__ - команда,осуществляющая конкатенацию строк *(string zz = Console.ReadLine(); string xx = Console.ReadLine();zz = string.Concat(zz,xx);
+Console.WriteLine(zz);)*
+
+__Trim()__ - команда,форматирующая строку на удаление пробельных символов *(string name = "             chuckdasdasd";string mena = name.Trim(); Console.WriteLine(mena); //chuckdasdasd)*(TrimFront() и TrimEnd())
 
  ### Типы данных
      int - тип данных,целых чисел (3)/ так же существует подобныт тип данных - Long
