@@ -277,3 +277,25 @@ __uint a = 10U; long b = 20L; ulong c = 30UL__;
      }
     }
     
+Свойства бывают: -автореализуемом , -абслуживаемые(в которых будут дописанны проверки)
+
+
+
+### Виртуальные методы
+
+    Class Name1
+    {
+     public virtual void NameName9()
+     {
+      //code
+      }
+    }
+    
+    Class Name2 : Name1
+    {
+     public override void NameName9()
+     {
+      //(либо использование того же кода) base.NameName9()
+      //либо какие-то другие значения этому методу
+     }
+    }
