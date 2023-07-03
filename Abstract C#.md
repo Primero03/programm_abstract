@@ -96,6 +96,12 @@ T o m
     ??  -  возвращает значение своего операнда слева, если его значение не равно null. В противном случае он вычисляет операнд справа и возвращает его результат
     ?  -  тернарный условный оператор(верно ли это условие? да: нет)
     =>  -  лямбда
+
+ ### Делегаты
+
+    Делегат - (Указатель на метод)
+    Action  -  шаблон делегат,равнозначный : public delegate void NameDelegate();|Action<type> name = Method : public delegate void Action(type)
+    Predicate<type>  -   шаблон делегат,равнозначный : public delegate bool NameDelegate(type value)
     
 
 ### Array and List
