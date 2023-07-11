@@ -2,6 +2,7 @@
 
 ## Начало работы:
  __dotnet new console__ - создать новый консольный проэкт
+
  __dotnet new winforms__ - создать новый проэкт на платформе WinForms
 
  **dotnet run** - запустить проэкт
