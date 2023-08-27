@@ -4,6 +4,7 @@
 ### Снипеты
 
 sysout - System.out.println();
+
 ctor - создание конструктора класса
 
 
