@@ -110,3 +110,52 @@ Type files
 
  ln -s name1 name2 - создается символической ссылки между двумя файлами,те данные что вносятся в name2 ссылаются на name1 и name2 остается без изменений
 
+
+User Management
+
+tall /etc/passwd
+
+     useradd - создание пользователя  | (sudo(от имени админестатора) useradd -s /bin/bash(указание оболочки) -m(создать домашнюю директорию) -d(указать точный путь) /home/userP nameUser)
+     
+     usermod - изменение пользователя | sudo usermod -aG(создать дубликат пользователя в другом каталоге) каталог nameUser 
+     
+     userdel - удаление пользователя  | sudo userdel nameUser 
+     
+     passwd - изменение пароля        | sudo passwd nameUser
+     
+     chage - изменение свойств пароля | sudo chage nameUser
+     
+     groupadd - создание группы       | sudo groupadd nameGroup
+     
+     groupdel - удаление группы       | sudo groupdel nameGroup
+
+     id - посмотреть информацию о пользователе | sudo id nameUser
+
+     su - переключение на другого пользователя | su nameUser
+
+
+
+    chown - изменение группы и владельца
+
+    chown - R - рекурсивно
+    
+    chown testuser : testgroup | sudo chown nameUser(новый владелец) : nameGroup(новая группа) namePackage(имя директории,у которой происходит смена)
+    
+    chow testuser
+
+    chgrp - изменение группы | sudo chgrp nameGroup namePackage
+
+    
+Access Rights(права доступа)
+
+    chmod
+     |sudo chmod u=rmx ,g=rw ,o=rx name
+      7 = rwx, 6 =rw, 4=r, 2=w,1=x
+      r (read) — возможность открытия и чтения файла или просмотр содержимого
+      каталога.
+      ● w (write) — возможность изменить содержимое файла или возможность
+      создавать, удалять или переименовывать объекты в каталоге.
+      ● x (execute) — возможность выполнить файл (запустить программу, скрипт) или
+      возможность войти в каталог и получить атрибуты объектов.
+
+     
